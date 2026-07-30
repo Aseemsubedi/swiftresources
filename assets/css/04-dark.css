@@ -1,0 +1,180 @@
+body,
+body.boxed-wrapper .page-wrapper {
+    background-color: var(--Trnspot-black);
+}
+
+.main-header-one__bottom,
+.faq-one,
+.about-one,
+.services-one__single-content,
+.services-one__single-img-inner::before,
+.services-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.services-one__carousel.owl-carousel .owl-nav button.owl-next,
+.stricky-header.main-menu,
+.testimonials-one,
+.testimonials-one__single,
+.counter-one,
+.project-one__single-content,
+.faq-one-accrodion .accrodion-content,
+.team-one__single-content,
+.team-one__social span,
+.team-one__social ul,
+.working-process-one,
+.blog-one {
+    background: #082f3c;
+}
+
+.about-one__experience-box,
+.about-one__content-list ul li,
+.services-one,
+.testimonials-one__inner,
+.project-one,
+.counter-one__single-inner,
+.faq-one__customer,
+.faq-one__reviews,
+.faq-one-accrodion .accrodion,
+.team-one,
+.team-one__social ul li a,
+.blog-one__single-content {
+    background-color: var(--Trnspot-black);
+}
+
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a,
+.main-menu__search,
+.main-header__shop .icon-box a,
+.about-one__experience-box .count-number h3,
+.about-one__experience-box .count-number span,
+.about-one__experience-box h4,
+.sec-title__title,
+.about-one__content-list ul li .content-box h2,
+.services-one__single-content h2 a,
+.testimonials-one__single-top-author .text-box h2,
+.counter-one__single-content .count-box .plus,
+.counter-one__single-content .count-box h2,
+.counter-one__single-content .count-box .k,
+.project-one__single-content h2 a,
+.why-choose-one__form-box .title-box h2,
+.faq-one__customer .count-number h3,
+.faq-one__customer .count-number span,
+.faq-one__reviews .count-text-box h4,
+.faq-one-accrodion .accrodion-title h4,
+.faq-one-accrodion .accrodion-title h4::before,
+.team-one__single-content h2 a,
+.team-one__social span,
+.team-one__social ul li a,
+.working-process-one__single .content-box h2 a,
+.blog-one__single-content h2 a {
+    color: var(--Trnspot-white);
+}
+
+.main-menu .main-menu__list>li.dropdown>a:after {
+    color: var(--Trnspot-white);
+}
+
+.main-menu .main-menu__list>li.current>a::after,
+.main-menu .main-menu__list>li:hover>a::after,
+.stricky-header .main-menu__list>li.current>a::after,
+.stricky-header .main-menu__list>li:hover>a::after {
+    color: var(--Trnspot-base);
+}
+
+.about-one__content-text p,
+.about-one__content-list ul li .content-box p,
+.counter-one__single-content p,
+.why-choose-one__content-list ul li p,
+.why-choose-one__form-distance .title p,
+.why-choose-one__form-distance-inner .ranger-min-max-block input[type="text"],
+.faq-one__customer h4,
+.faq-one-accrodion .accrodion-content p,
+.blog-one__single-content .meta-box li p a {
+    color: rgba(var(--Trnspot-white-rgb), 0.8);
+}
+
+p {
+    color: rgba(var(--Trnspot-white-rgb), 0.8);
+}
+
+.services-one__single-content {
+    border: 1px solid rgba(var(--Trnspot-white-rgb), 0.1);
+    border-top: 0px;
+}
+
+.services-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.services-one__carousel.owl-carousel .owl-nav button.owl-next,
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-next {
+    border: 1px solid rgba(var(--Trnspot-white-rgb), 0.5);
+    color: rgba(var(--Trnspot-white-rgb), 0.5);
+}
+
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-next {
+    background-color: var(--Trnspot-black);
+}
+
+.testimonials-one__single-quote span::before {
+    color: rgba(var(--Trnspot-white-rgb), .17);
+}
+
+.testimonials-one__single,
+.faq-one-accrodion .accrodion {
+    border: 1px solid rgba(var(--Trnspot-white-rgb), .12);
+}
+
+.project-one__top-btn .thm-btn .hover-btn {
+    background: #082f3c;
+}
+
+.counter-one__single-icon {
+    background: var(--Trnspot-black);
+    border: 2px solid rgba(var(--Trnspot-white-rgb), .07);
+}
+
+.project-one__single-content .icon-box a {
+    background: rgba(var(--Trnspot-white-rgb), .13);
+}
+
+.why-choose-one__form-box {
+    background: #033745;
+}
+
+.why-choose-one__form .input-box input[type="text"],
+.why-choose-one__form .input-box input[type="email"],
+.why-choose-one__form .input-box .nice-select {
+    background-color: rgba(var(--Trnspot-white-rgb), .05);
+    border: 1px solid rgba(var(--Trnspot-white-rgb), .1);
+    color: rgba(var(--Trnspot-white-rgb), .7);
+}
+
+.why-choose-one__form-distance-inner .ui-widget-content {
+    background: rgba(var(--Trnspot-white-rgb), .15);
+}
+
+.why-choose-one__form-distance-inner .ranger-min-max-block input[type="text"] {
+    background: transparent;
+}
+
+.why-choose-one__form-distance-inner .ranger-min-max-block {
+    border: 1px solid rgba(var(--Trnspot-white-rgb), .15);
+}
+
+.working-process-one .shape1 {
+    border: 1px dashed rgba(var(--Trnspot-white-rgb), .15);
+}
+
+.blog-one:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -60px;
+    right: 0;
+    content: "";
+    background: #082f3c;
+}
+
+
+
+
+
+/* The End */
