@@ -2827,11 +2827,13 @@ Main Slider One
 }
 
 .main-slider-one__big-title h2 {
-  color: transparent;
-  -webkit-text-stroke: 3px rgba(var(--Trnspot-white-rgb), 0.1);
+  color: transparent !important;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.12);
   font-size: 200px;
   line-height: 0.9em;
   font-weight: 600;
+  opacity: 0.45;
+}
   text-transform: uppercase;
 }
 
@@ -18040,4 +18042,13 @@ textarea::placeholder {
 .page-header,
 .banner-one {
   background-color: transparent !important;
+}
+
+/* Hero watermark — keep outline only, never fill with heading color */
+.main-slider-one__big-title h2,
+.main-slider-one__big-title h2 * {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.14) !important;
+  opacity: 0.5;
 }
