@@ -7717,16 +7717,18 @@ Working Process Two
 }
 
 .site-footer__cta-btns .thm-btn {
-  background: var(--Trnspot-black);
+  background: var(--Trnspot-black) !important;
+  color: var(--Trnspot-white) !important;
 }
 
 .site-footer__cta-btns .thm-btn .hover-btn {
-  background: rgba(var(--Trnspot-black-rgb), 0.85);
+  background: rgba(0, 0, 0, 0.45) !important;
 }
 
 .site-footer__cta-secondary {
   background: rgba(255, 255, 255, 0.18) !important;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  color: var(--Trnspot-black) !important;
 }
 
 .site-footer__cta-secondary .hover-btn {
@@ -17534,6 +17536,12 @@ Contact Intro & Side Panel
 
 .contact-intro__cta .thm-btn {
   min-width: 220px;
+  color: #0b1d36 !important;
+}
+
+.contact-intro__cta .thm-btn.contact-intro__cta-secondary {
+  background: var(--Trnspot-black) !important;
+  color: #ffffff !important;
 }
 
 .contact-intro__cta-secondary {
@@ -17927,12 +17935,36 @@ textarea::placeholder {
   color: var(--Trnspot-white) !important;
 }
 
+/* Footer gold CTA bar — navy button needs white label */
 .site-footer__cta {
-  background-color: var(--Trnspot-surface);
+  background-color: transparent;
 }
 
-.site-footer__cta-secondary {
-  color: var(--Trnspot-heading) !important;
+.site-footer__cta-content h2 {
+  color: var(--Trnspot-white) !important;
+}
+
+.site-footer__cta-content p {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.site-footer__cta-btns .thm-btn {
+  background: var(--Trnspot-black) !important;
+  color: #ffffff !important;
+}
+
+.site-footer__cta-btns .thm-btn:hover {
+  color: #ffffff !important;
+}
+
+.site-footer__cta-btns .thm-btn.site-footer__cta-secondary {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  color: var(--Trnspot-black) !important;
+}
+
+.site-footer__cta-btns .thm-btn.site-footer__cta-secondary:hover {
+  color: #ffffff !important;
 }
 
 .xs-sidebar-group .content-inner,
