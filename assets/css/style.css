@@ -56,24 +56,27 @@ Common
 =============================================
 ***/
 :root {
-  /* Business card palette — deep navy + metallic gold */
+  /* Business card palette — deep navy + metallic gold (full dark site) */
   --Trnspot-font: "Roboto", sans-serif;
   --Trnspot-font-two: "Teko", sans-serif;
   --Trnspot-base: #c5a059;
   --Trnspot-base-rgb: 197, 160, 89;
-  --Trnspot-black: #0a0e17;
-  --Trnspot-black-rgb: 10, 14, 23;
-  --Trnspot-gray: #6f6a73;
-  --Trnspot-gray-rgb: 111, 106, 115;
+  --Trnspot-black: #0b1d36;
+  --Trnspot-black-rgb: 11, 29, 54;
+  --Trnspot-gray: #c4bdb2;
+  --Trnspot-gray-rgb: 196, 189, 178;
   --Trnspot-white: #ffffff;
   --Trnspot-white-rgb: 255, 255, 255;
-  --Trnspot-gray-bg: #efe6d6;
-  --Trnspot-gray-bg-rgb: 239, 230, 214;
-  --Trnspot-bdr-color: #d9ceb6;
-  --Trnspot-bdr-color-rgb: 217, 206, 182;
+  --Trnspot-gray-bg: #0b1d36;
+  --Trnspot-gray-bg-rgb: 11, 29, 54;
+  --Trnspot-bdr-color: #1e3a5f;
+  --Trnspot-bdr-color-rgb: 30, 58, 95;
   --Trnspot-bdr-radius: 10px;
   --Trnspot-gold-light: #f5e3a8;
   --Trnspot-gold-dark: #7c5f2b;
+  --Trnspot-surface: #122844;
+  --Trnspot-surface-rgb: 18, 40, 68;
+  --Trnspot-heading: #f3ebe0;
 }
 
 .row {
@@ -137,7 +140,7 @@ h4,
 h5,
 h6 {
   font-family: var(--Trnspot-font-two);
-  color: var(--Trnspot-black);
+  color: var(--Trnspot-heading);
   margin: 0;
 }
 
@@ -17634,3 +17637,317 @@ Contact Intro & Side Panel
 End
 =============================================
 ***/
+
+/***
+=============================================
+Full Dark Navy Theme — Business Card Brand
+Applies deep navy across all sections & pages
+=============================================
+***/
+html {
+  background-color: var(--Trnspot-black);
+}
+
+body,
+.page-wrapper {
+  background-color: var(--Trnspot-black) !important;
+  color: var(--Trnspot-gray);
+}
+
+/* Major content sections → navy (background-color only — keep image layers) */
+.about-one,
+.about-two,
+.about-three,
+.services-one,
+.services-two,
+.services-three,
+.testimonials-one,
+.testimonial-two,
+.project-one,
+.counter-one,
+.why-choose-one,
+.faq-one,
+.working-process-one,
+.sliding-text-one,
+.blog-one,
+.blog-page,
+.blog-details,
+.quote-one,
+.quote-two,
+.skill-one,
+.cta-one,
+.brand-one,
+.office-location,
+.history-page,
+.team-one,
+.team-two,
+.pricing-one,
+.contact-page,
+.contact-one,
+.contact-intro,
+.contact-page-info,
+.error-page,
+.login-page,
+.sign-up-page,
+.feature-one,
+.award-one,
+.download-app-one,
+.video-one,
+.process-one,
+.projects-details,
+.services-details,
+.sidebar,
+.shop-page,
+.privacy-policy,
+.terms-conditions {
+  background-color: var(--Trnspot-black) !important;
+}
+
+/* Elevated navy-blue panels (former white cards) */
+.services-one__single-content,
+.testimonials-one__single,
+.testimonials-one__inner,
+.testimonial-two__single-inner,
+.faq-one__right,
+.faq-one .accrodion,
+.why-choose-one__form-box,
+.blog-one__single,
+.blog-one__content,
+.counter-one__single,
+.working-process-one__single,
+.about-one__experience-box,
+.about-one__industries-list li,
+.contact-page__form,
+.contact-page__form-box,
+.contact-page__side-card,
+.contact-page-info__single,
+.contact-page__info,
+.contact-page__info-single,
+.contact__form,
+.contact-one__form,
+.sidebar__single,
+.services-details__sidebar,
+.services-details__content,
+.blog-details__content,
+.blog-details__sidebar,
+.projects-details__content,
+.pricing-one__single,
+.team-one__single,
+.history-page__single,
+.feature-one__single,
+.quote-one .tab-content-box-item .quote-tab-content-box-item,
+.error-page__content,
+.login-page__content,
+.sign-up-page__content,
+.accrodion-content,
+.accrodion.active .accrodion-title,
+.nice-select,
+.nice-select .list {
+  background-color: var(--Trnspot-surface) !important;
+  border-color: var(--Trnspot-bdr-color) !important;
+  color: var(--Trnspot-gray);
+}
+
+/* Headings & titles readable on navy */
+h1, h2, h3, h4, h5, h6,
+.sec-title__title,
+.page-header__inner h1,
+.page-header__inner h2,
+.services-one__single-content h2 a,
+.testimonials-one__single-top-author .text-box h2,
+.testimonial-two__single-bottom .author-info h2,
+.blog-one__title a,
+.faq-one .accrodion-title h4,
+.why-choose-one__form-box .title-box h2,
+.counter-one__single .text-box h2,
+.working-process-one__single .content-box h2,
+.project-one__single-content .text-box h2 a,
+.footer-widget__title h2,
+.site-footer__cta-content h2,
+.contact-intro h2,
+.contact-page__side-card h3,
+.contact-page-info__single-text h2 {
+  color: var(--Trnspot-heading) !important;
+}
+
+.sec-title__tagline h4,
+.sec-title__tagline .text-box h4 {
+  color: var(--Trnspot-base) !important;
+}
+
+/* Body copy on dark */
+p,
+.about-one__content-text p,
+.services-one__single-content p,
+.testimonials-one__single-text p,
+.testimonial-two__single-inner p,
+.why-choose-one__content-list li p,
+.faq-one .accrodion-content p,
+.blog-one__text,
+.thm-breadcrumb li,
+.contact-page__text,
+.contact-intro__text,
+.contact-page__form-note,
+.footer-widget__about-text p {
+  color: var(--Trnspot-gray) !important;
+}
+
+.services-one__single-content h2 a:hover,
+.blog-one__title a:hover,
+.project-one__single-content .text-box h2 a:hover {
+  color: var(--Trnspot-base) !important;
+}
+
+/* Forms on dark */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+textarea,
+select,
+.nice-select,
+.form-control,
+.why-choose-one__form .input-box input,
+.why-choose-one__form .input-box textarea,
+.contact-form-validated input,
+.contact-form-validated textarea,
+.contact-page__form input,
+.contact-page__form textarea {
+  background-color: var(--Trnspot-black) !important;
+  color: var(--Trnspot-heading) !important;
+  border-color: var(--Trnspot-bdr-color) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(var(--Trnspot-white-rgb), 0.45) !important;
+}
+
+.nice-select .option {
+  color: var(--Trnspot-heading);
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background-color: rgba(var(--Trnspot-base-rgb), 0.2) !important;
+  color: var(--Trnspot-base) !important;
+}
+
+.about-one__industries-list li {
+  border: 1px solid rgba(var(--Trnspot-base-rgb), 0.45) !important;
+  color: var(--Trnspot-heading) !important;
+}
+
+.services-one__single-content .icon-box {
+  background-color: var(--Trnspot-black) !important;
+  border-color: var(--Trnspot-base) !important;
+}
+
+.main-menu .main-menu__list > li > ul,
+.main-menu .main-menu__list > li > ul > li > ul,
+.stricky-header .main-menu__list > li > ul {
+  background-color: var(--Trnspot-surface) !important;
+}
+
+.main-menu .main-menu__list > li > ul > li > a,
+.stricky-header .main-menu__list > li > ul > li > a {
+  color: var(--Trnspot-heading) !important;
+}
+
+.page-header__inner .thm-breadcrumb li,
+.page-header__inner .thm-breadcrumb li a {
+  color: rgba(var(--Trnspot-white-rgb), 0.85) !important;
+}
+
+.faq-one .accrodion-title {
+  background-color: var(--Trnspot-surface) !important;
+}
+
+.faq-one .accrodion.active {
+  border-color: var(--Trnspot-base) !important;
+}
+
+.why-choose-one__content-list li p span {
+  color: var(--Trnspot-base) !important;
+}
+
+.counter-one__single .text-box p,
+.working-process-one__single .content-box p {
+  color: var(--Trnspot-gray) !important;
+}
+
+.blog-one__meta li,
+.blog-one__meta li a {
+  color: var(--Trnspot-gray) !important;
+}
+
+.sidebar__title,
+.sidebar__post .title a,
+.sidebar__category-list a,
+.sidebar__tags-list a {
+  color: var(--Trnspot-heading) !important;
+}
+
+.sidebar__category-list a,
+.sidebar__tags-list a {
+  background-color: var(--Trnspot-black) !important;
+  border-color: var(--Trnspot-bdr-color) !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.services-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.services-one__carousel.owl-carousel .owl-nav button.owl-next,
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-prev,
+.testimonials-one__carousel.owl-carousel .owl-nav button.owl-next {
+  background-color: var(--Trnspot-surface) !important;
+  border-color: var(--Trnspot-bdr-color) !important;
+  color: var(--Trnspot-heading) !important;
+}
+
+.scroll-to-top__text {
+  color: var(--Trnspot-heading);
+}
+
+.blog-details__text,
+.blog-details__text p,
+.services-details__text p,
+.projects-details__text p {
+  color: var(--Trnspot-gray) !important;
+}
+
+.thm-btn {
+  color: #0b1d36 !important;
+}
+
+.thm-btn:hover {
+  color: var(--Trnspot-white) !important;
+}
+
+.site-footer__cta {
+  background-color: var(--Trnspot-surface);
+}
+
+.site-footer__cta-secondary {
+  color: var(--Trnspot-heading) !important;
+}
+
+.xs-sidebar-group .content-inner,
+.search-popup .search-popup__content {
+  background-color: var(--Trnspot-surface) !important;
+}
+
+.sliding-text-one,
+.testimonials-one__sliding-text-list li {
+  color: rgba(var(--Trnspot-base-rgb), 0.25) !important;
+}
+
+/* Hero/page-header keep image layers — only tint overlay stays navy */
+.main-slider-one,
+.page-header,
+.banner-one {
+  background-color: transparent !important;
+}
