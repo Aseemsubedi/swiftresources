@@ -7717,13 +7717,13 @@ Working Process Two
 }
 
 .site-footer__cta-btns .thm-btn {
-  background: linear-gradient(135deg, var(--Trnspot-gold-light) 0%, #ffffff 45%, var(--Trnspot-gold-light) 100%) !important;
+  background: #ffffff !important;
   color: #0b1d36 !important;
-  border: 1px solid rgba(11, 29, 54, 0.15) !important;
+  border: 2px solid #ffffff !important;
 }
 
 .site-footer__cta-btns .thm-btn .hover-btn {
-  background: var(--Trnspot-black) !important;
+  background: #0b1d36 !important;
 }
 
 .site-footer__cta-secondary {
@@ -7733,7 +7733,7 @@ Working Process Two
 }
 
 .site-footer__cta-secondary .hover-btn {
-  background: var(--Trnspot-black) !important;
+  background: #0b1d36 !important;
 }
 
 .footer-widget__hours {
@@ -17966,16 +17966,20 @@ textarea::placeholder {
   color: #ffffff !important;
 }
 
+.site-footer__cta-btns .thm-btn .hover-btn {
+  background: #0b1d36 !important;
+}
+
 .site-footer__cta-btns .thm-btn.site-footer__cta-secondary {
-  background: transparent !important;
-  border: 2px solid #ffffff !important;
-  color: #ffffff !important;
-  box-shadow: none;
+  background: #ffffff !important;
+  border: 2px solid #0b1d36 !important;
+  color: #0b1d36 !important;
+  box-shadow: 0 8px 20px rgba(11, 29, 54, 0.12);
 }
 
 .site-footer__cta-btns .thm-btn.site-footer__cta-secondary:hover {
-  background: #ffffff !important;
-  color: #0b1d36 !important;
+  background: #0b1d36 !important;
+  color: #ffffff !important;
 }
 
 /* Contact intro secondary stays navy with white label */
