@@ -18062,25 +18062,36 @@ Industries One — big About Us industry sections
   position: relative;
   display: block;
   background-color: var(--Trnspot-black);
-  padding: 110px 0 90px;
+  padding: 120px 0 110px;
   z-index: 1;
 }
 
+.industries-one .sec-title {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
 .industries-one__intro {
-  max-width: 720px;
-  margin: -20px auto 50px;
+  max-width: 760px;
+  margin: 0 auto 60px;
   color: var(--Trnspot-gray) !important;
   font-size: 17px;
   line-height: 28px;
+}
+
+.industries-one .row {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 30px;
+  row-gap: 20px;
 }
 
 .industries-one__single {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 30px);
-  margin-bottom: 30px;
-  padding: 40px 32px 36px;
+  height: calc(100% - 40px);
+  margin-bottom: 40px;
+  padding: 48px 36px 42px;
   background: var(--Trnspot-surface);
   border: 1px solid var(--Trnspot-bdr-color);
   border-radius: var(--Trnspot-bdr-radius);
@@ -18100,7 +18111,7 @@ Industries One — big About Us industry sections
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   border-radius: 50%;
   border: 2px solid var(--Trnspot-base);
   background: var(--Trnspot-black);
@@ -18117,13 +18128,14 @@ Industries One — big About Us industry sections
   font-size: 28px;
   line-height: 34px;
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .industries-one__single p {
   color: var(--Trnspot-gray) !important;
-  margin-bottom: 22px;
+  margin-bottom: 28px;
   flex: 1;
+  line-height: 28px;
 }
 
 .industries-one__link {
@@ -18149,16 +18161,18 @@ Industries One — big About Us industry sections
 }
 
 .industries-one__more {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
+  clear: both;
+  width: 100%;
 }
 
 .industries-one__more-inner {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 32px;
   flex-wrap: wrap;
-  padding: 36px 40px;
+  padding: 44px 48px;
   background: linear-gradient(135deg, rgba(var(--Trnspot-base-rgb), 0.18) 0%, var(--Trnspot-surface) 55%);
   border: 1px solid rgba(var(--Trnspot-base-rgb), 0.4);
   border-radius: var(--Trnspot-bdr-radius);
@@ -18189,28 +18203,47 @@ Industries One — big About Us industry sections
   color: var(--Trnspot-heading) !important;
   font-size: 32px;
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .industries-one__more-content p {
   color: var(--Trnspot-gray) !important;
   margin: 0;
   max-width: 560px;
+  line-height: 28px;
+}
+
+@media (max-width: 991px) {
+  .industries-one__single {
+    height: auto;
+    margin-bottom: 28px;
+    padding: 40px 28px 36px;
+  }
+
+  .industries-one__more {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 767px) {
   .industries-one {
-    padding: 80px 0 60px;
+    padding: 90px 0 70px;
+  }
+
+  .industries-one__intro {
+    margin-bottom: 40px;
   }
 
   .industries-one__single {
-    padding: 32px 24px 28px;
+    padding: 36px 24px 32px;
+    margin-bottom: 24px;
   }
 
   .industries-one__more-inner {
-    padding: 28px 22px;
+    padding: 32px 24px;
     justify-content: center;
     text-align: center;
+    gap: 20px;
   }
 
   .industries-one__more-content p {
