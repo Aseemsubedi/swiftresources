@@ -56,22 +56,24 @@ Common
 =============================================
 ***/
 :root {
-  /* Sky blue logistics palette */
+  /* Business card palette — deep navy + metallic gold */
   --Trnspot-font: "Roboto", sans-serif;
   --Trnspot-font-two: "Teko", sans-serif;
-  --Trnspot-base: #0ea5e9;
-  --Trnspot-base-rgb: 14, 165, 233;
-  --Trnspot-black: #0c4a6e;
-  --Trnspot-black-rgb: 12, 74, 110;
-  --Trnspot-gray: #5b6b7c;
-  --Trnspot-gray-rgb: 91, 107, 124;
+  --Trnspot-base: #c5a059;
+  --Trnspot-base-rgb: 197, 160, 89;
+  --Trnspot-black: #0a0e17;
+  --Trnspot-black-rgb: 10, 14, 23;
+  --Trnspot-gray: #6b6570;
+  --Trnspot-gray-rgb: 107, 101, 112;
   --Trnspot-white: #ffffff;
   --Trnspot-white-rgb: 255, 255, 255;
-  --Trnspot-gray-bg: #f0f9ff;
-  --Trnspot-gray-bg-rgb: 240, 249, 255;
-  --Trnspot-bdr-color: #bae6fd;
-  --Trnspot-bdr-color-rgb: 186, 230, 253;
+  --Trnspot-gray-bg: #f7f4ef;
+  --Trnspot-gray-bg-rgb: 247, 244, 239;
+  --Trnspot-bdr-color: #e4dcc8;
+  --Trnspot-bdr-color-rgb: 228, 220, 200;
   --Trnspot-bdr-radius: 10px;
+  --Trnspot-gold-light: #f5e3a8;
+  --Trnspot-gold-dark: #7c5f2b;
 }
 
 .row {
@@ -370,11 +372,11 @@ Sec Title Css
 .thm-btn {
   position: relative;
   display: inline-block;
-  color: var(--Trnspot-white);
+  color: var(--Trnspot-black);
   font-size: 14px;
   line-height: 55px;
   font-weight: 600;
-  background: var(--Trnspot-base);
+  background: linear-gradient(135deg, var(--Trnspot-gold-light) 0%, var(--Trnspot-base) 45%, var(--Trnspot-gold-dark) 100%);
   border-radius: 5px;
   padding: 0px 35px 0px;
   overflow: hidden;
@@ -3755,7 +3757,7 @@ About One
   display: inline-flex;
   align-items: center;
   padding: 8px 14px;
-  border: 1px solid var(--Trnspot-bdr-color);
+  border: 1px solid rgba(var(--Trnspot-base-rgb), 0.45);
   border-radius: 999px;
   background: var(--Trnspot-white);
   color: var(--Trnspot-black);
