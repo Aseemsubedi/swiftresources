@@ -7717,22 +7717,23 @@ Working Process Two
 }
 
 .site-footer__cta-btns .thm-btn {
-  background: var(--Trnspot-black) !important;
-  color: var(--Trnspot-white) !important;
+  background: linear-gradient(135deg, var(--Trnspot-gold-light) 0%, #ffffff 45%, var(--Trnspot-gold-light) 100%) !important;
+  color: #0b1d36 !important;
+  border: 1px solid rgba(11, 29, 54, 0.15) !important;
 }
 
 .site-footer__cta-btns .thm-btn .hover-btn {
-  background: rgba(0, 0, 0, 0.45) !important;
+  background: var(--Trnspot-black) !important;
 }
 
 .site-footer__cta-secondary {
-  background: rgba(255, 255, 255, 0.18) !important;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  color: var(--Trnspot-black) !important;
+  background: #ffffff !important;
+  border: 2px solid #0b1d36 !important;
+  color: #0b1d36 !important;
 }
 
 .site-footer__cta-secondary .hover-btn {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--Trnspot-black) !important;
 }
 
 .footer-widget__hours {
@@ -17928,20 +17929,26 @@ textarea::placeholder {
 }
 
 .thm-btn {
+  background: linear-gradient(135deg, var(--Trnspot-gold-light) 0%, var(--Trnspot-base) 45%, var(--Trnspot-gold-dark) 100%) !important;
   color: #0b1d36 !important;
 }
 
-.thm-btn:hover {
-  color: var(--Trnspot-white) !important;
+.thm-btn i,
+.thm-btn span:not(.hover-btn) {
+  color: inherit !important;
 }
 
-/* Footer gold CTA bar — navy button needs white label */
+.thm-btn:hover {
+  color: #ffffff !important;
+}
+
+/* Footer gold CTA bar — light buttons so text never hides */
 .site-footer__cta {
   background-color: transparent;
 }
 
 .site-footer__cta-content h2 {
-  color: var(--Trnspot-white) !important;
+  color: #ffffff !important;
 }
 
 .site-footer__cta-content p {
@@ -17949,8 +17956,10 @@ textarea::placeholder {
 }
 
 .site-footer__cta-btns .thm-btn {
-  background: var(--Trnspot-black) !important;
-  color: #ffffff !important;
+  background: #ffffff !important;
+  color: #0b1d36 !important;
+  border: none !important;
+  box-shadow: 0 8px 20px rgba(11, 29, 54, 0.18);
 }
 
 .site-footer__cta-btns .thm-btn:hover {
@@ -17958,12 +17967,20 @@ textarea::placeholder {
 }
 
 .site-footer__cta-btns .thm-btn.site-footer__cta-secondary {
-  background: rgba(255, 255, 255, 0.22) !important;
-  border: 1px solid rgba(255, 255, 255, 0.55) !important;
-  color: var(--Trnspot-black) !important;
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  box-shadow: none;
 }
 
 .site-footer__cta-btns .thm-btn.site-footer__cta-secondary:hover {
+  background: #ffffff !important;
+  color: #0b1d36 !important;
+}
+
+/* Contact intro secondary stays navy with white label */
+.contact-intro__cta .thm-btn.contact-intro__cta-secondary {
+  background: var(--Trnspot-black) !important;
   color: #ffffff !important;
 }
 
