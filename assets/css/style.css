@@ -63,14 +63,14 @@ Common
   --Trnspot-base-rgb: 197, 160, 89;
   --Trnspot-black: #0a0e17;
   --Trnspot-black-rgb: 10, 14, 23;
-  --Trnspot-gray: #6b6570;
-  --Trnspot-gray-rgb: 107, 101, 112;
+  --Trnspot-gray: #6f6a73;
+  --Trnspot-gray-rgb: 111, 106, 115;
   --Trnspot-white: #ffffff;
   --Trnspot-white-rgb: 255, 255, 255;
-  --Trnspot-gray-bg: #f7f4ef;
-  --Trnspot-gray-bg-rgb: 247, 244, 239;
-  --Trnspot-bdr-color: #e4dcc8;
-  --Trnspot-bdr-color-rgb: 228, 220, 200;
+  --Trnspot-gray-bg: #efe6d6;
+  --Trnspot-gray-bg-rgb: 239, 230, 214;
+  --Trnspot-bdr-color: #d9ceb6;
+  --Trnspot-bdr-color-rgb: 217, 206, 182;
   --Trnspot-bdr-radius: 10px;
   --Trnspot-gold-light: #f5e3a8;
   --Trnspot-gold-dark: #7c5f2b;
@@ -90,6 +90,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  background-color: var(--Trnspot-gray-bg);
 }
 
 body.locked {
@@ -186,6 +187,7 @@ button {
   width: 100%;
   min-width: 300px;
   overflow: hidden;
+  background-color: var(--Trnspot-gray-bg);
 }
 
 .container {
@@ -905,7 +907,7 @@ xs sidebar
 
 .xs-sidebar-group .content-inner .form-inner .form-group input:focus,
 .xs-sidebar-group .content-inner .form-inner .form-group textarea:focus {
-  border-color: #00224f;
+  border-color: var(--Trnspot-black);
 }
 
 .xs-sidebar-group .content-inner .form-inner .form-group button {
@@ -2041,7 +2043,7 @@ Main Header One Css
 .main-header-one__bottom {
   position: relative;
   display: block;
-  background: var(--Trnspot-white);
+  background: var(--Trnspot-black);
   z-index: 2;
 }
 
@@ -2137,7 +2139,7 @@ Main Header One Css
 .main-menu__search {
   position: relative;
   display: block;
-  color: var(--Trnspot-black);
+  color: var(--Trnspot-white);
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -2212,7 +2214,7 @@ Main Header One Css
 }
 
 .stricky-header.main-menu {
-  background-color: var(--Trnspot-white);
+  background-color: var(--Trnspot-black);
 }
 
 .stricky-header__one .container {
@@ -2294,7 +2296,7 @@ Main Menu
 
 .main-menu .main-menu__list>li>a,
 .stricky-header .main-menu__list>li>a {
-  color: var(--Trnspot-black);
+  color: var(--Trnspot-white);
   font-size: 22px;
   line-height: 32px;
   display: -webkit-box;
@@ -2330,7 +2332,7 @@ Main Menu
   font-family: 'icomoon' !important;
   content: "\e949";
   font-size: 12px;
-  color: var(--Trnspot-black);
+  color: var(--Trnspot-white);
   transform: translateY(-50%);
   font-weight: 700;
   -webkit-transition: all 500ms ease;
@@ -2612,7 +2614,7 @@ Main Menu
 }
 
 .main-menu .mobile-nav__toggler:hover {
-  color: var(--Trnspot-black);
+  color: var(--Trnspot-white);
 }
 
 .main-menu .mobile-nav__toggler i::before {
@@ -2673,7 +2675,7 @@ Main Slider One
   bottom: 0;
   right: 0;
   background: var(--Trnspot-black);
-  background-blend-mode: luminosity;
+  background-blend-mode: multiply;
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2701,7 +2703,7 @@ Main Slider One
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(var(--Trnspot-black-rgb), 0.85);
+  background: rgba(var(--Trnspot-black-rgb), 0.88);
   content: "";
   z-index: -1;
 }
@@ -2845,10 +2847,10 @@ Main Slider One
   bottom: 0;
   right: 100%;
   border-left: 5px solid var(--Trnspot-base);
-  background: #052E39;
-  background: linear-gradient(90deg, rgba(5, 46, 57, 0.87) 0%, rgba(5, 46, 57, 0.75) 27%, rgba(5, 46, 57, 0.54) 64%, rgba(5, 46, 57, 0) 100%);
+  background: var(--Trnspot-black);
+  background: linear-gradient(90deg, rgba(var(--Trnspot-black-rgb), 0.92) 0%, rgba(var(--Trnspot-black-rgb), 0.78) 27%, rgba(var(--Trnspot-black-rgb), 0.45) 64%, rgba(var(--Trnspot-black-rgb), 0) 100%);
   border-radius: var(--Trnspot-bdr-radius);
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
   content: "";
   z-index: -1;
   opacity: 0;
@@ -7640,7 +7642,7 @@ Working Process Two
   bottom: 0;
   right: 0;
   background: var(--Trnspot-black);
-  background-blend-mode: luminosity;
+  background-blend-mode: multiply;
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7716,7 +7718,7 @@ Working Process Two
 }
 
 .site-footer__cta-btns .thm-btn .hover-btn {
-  background: #082f3c;
+  background: rgba(var(--Trnspot-black-rgb), 0.85);
 }
 
 .site-footer__cta-secondary {
@@ -10089,7 +10091,7 @@ Page Header
   bottom: 0;
   right: 0;
   background: var(--Trnspot-black);
-  background-blend-mode: luminosity;
+  background-blend-mode: multiply;
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
