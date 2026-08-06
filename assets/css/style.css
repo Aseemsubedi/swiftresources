@@ -17722,7 +17722,6 @@ body,
 .why-choose-one__form-box,
 .blog-one__single,
 .blog-one__content,
-.counter-one__single,
 .working-process-one__single,
 .about-one__experience-box,
 .about-one__industries-list li,
@@ -17996,6 +17995,44 @@ textarea::placeholder {
 .sliding-text-one,
 .testimonials-one__sliding-text-list li {
   color: rgba(var(--Trnspot-base-rgb), 0.25) !important;
+}
+
+/* Counter cards — white surfaces need dark navy numbers (not cream text) */
+.counter-one {
+  background-color: var(--Trnspot-black) !important;
+}
+
+.counter-one__single {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.counter-one__single-inner {
+  background: #ffffff !important;
+  border: 1px solid rgba(197, 160, 89, 0.35) !important;
+  border-bottom: 3px solid var(--Trnspot-base) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.counter-one__single-icon {
+  background: #ffffff !important;
+  border-color: rgba(197, 160, 89, 0.45) !important;
+}
+
+.counter-one__single-icon span:before {
+  color: var(--Trnspot-base) !important;
+}
+
+.counter-one__single-content .count-box h2,
+.counter-one__single-content .count-box h2.count-text,
+.counter-one__single-content .count-box .plus,
+.counter-one__single-content .count-box .k {
+  color: #0b1d36 !important;
+}
+
+.counter-one__single-content p {
+  color: #5c6570 !important;
 }
 
 /* Hero/page-header keep image layers — only tint overlay stays navy */
