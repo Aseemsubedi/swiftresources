@@ -18250,3 +18250,57 @@ Industries One — big About Us industry sections
     margin: 0 auto;
   }
 }
+
+/* About founder spotlight */
+.about-founder {
+  position: relative;
+  display: block;
+  margin: 32px 0 40px;
+  padding: 28px 30px 26px;
+  background: var(--Trnspot-surface);
+  border: 1px solid var(--Trnspot-bdr-color);
+  border-left: 4px solid var(--Trnspot-base);
+  border-radius: var(--Trnspot-bdr-radius);
+}
+
+.about-founder__label {
+  color: var(--Trnspot-base);
+  font-family: var(--Trnspot-font-two);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-founder h3 {
+  color: var(--Trnspot-heading) !important;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.about-founder__role {
+  color: var(--Trnspot-base) !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 14px !important;
+}
+
+.about-founder p {
+  color: var(--Trnspot-gray) !important;
+  margin: 0;
+  line-height: 28px;
+}
+
+@media (max-width: 767px) {
+  .about-founder {
+    margin: 24px 0 32px;
+    padding: 22px 20px 20px;
+  }
+
+  .about-founder h3 {
+    font-size: 24px;
+  }
+}
