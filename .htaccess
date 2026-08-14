@@ -1,5 +1,6 @@
 # Swift Resources — static HTML site (Hostinger / LiteSpeed)
 DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -9,11 +10,22 @@ DirectoryIndex index.html index.php
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Serve real files and directories as-is
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
+  # Block any leftover WordPress entry points from taking over the site
+  RewriteRule ^wp-(admin|content|includes|login|json)(/|\.php|$) - [R=404,L]
+  RewriteRule ^xmlrpc\.php$ - [R=404,L]
+</IfModule>
 
-  # Missing paths → static 404 (do not fall through to WordPress)
-  RewriteRule ^ 404.html [L]
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/html "access plus 1 hour"
 </IfModule>
